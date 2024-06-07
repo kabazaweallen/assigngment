@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item" onclick="openFullscreen('zebra', 0)">
+            <img src="images/lion.jpg" alt="Zebra">
+            <div class="gallery-info">
+                <h3>Lion King of anamal</h3>
+                <p>Grasslands of Akagera</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+        <div class="gallery-item" onclick="openFullscreen('chitah', 1)">
+            <img src="images/chitah.jpg" alt="Cheetah">
+            <div class="gallery-info">
+                <h3>Cheetah Home land</h3>
+                <p>Nyungwe Park</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+        <div class="gallery-item" onclick="openFullscreen('monkey', 2)">
+            <img src="images/monkey.jpg" alt="Common Brown Baboon">
+            <div class="gallery-info">
+                <h3>Monkey wild life</h3>
+                <p>Butare Ur</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+        <div class="gallery-item" onclick="openFullscreen('paris', 3)">
+            <img src="images/whale.jpg" alt="Spotted Deer">
+            <div class="gallery-info">
+                <h3>Whale Ocean</h3>
+                <p>Indian Ocean</p>
+                <a href="#" class="read-more">Read More &rarr;</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="fullscreen-overlay" class="fullscreen-overlay" onclick="closeFullscreen()">
+        <img id="fullscreen-image" src="" alt="Fullscreen Image">
+        <div class="navigation-arrows">
+            <div class="prev" onclick="prevImage(event)">&#10094;</div>
+            <div class="next" onclick="nextImage(event)">&#10095;</div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
